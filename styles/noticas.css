@@ -1,0 +1,462 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .header-main {
+  position: relative;
+  background-color: #d4172e;   
+  color: #ffffff;
+  padding: 25px 0 35px;
+}
+
+
+.brand-logo {
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;          
+}
+
+
+.header-title {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding: 1%;
+}
+
+.blue-strip {
+  height: 40px;
+  background-color: #265bbf;
+}
+
+
+.nav-pills-menu {
+  position: relative;
+  margin-top: -30px;        
+  padding: 10px 0 20px;
+}
+
+
+.nav-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 24px 8px 48px;  
+  background-color: #ffffff;
+  border-radius: 999px;
+  border: 1px solid #d0d0d0;
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+
+.pill-icon {
+  position: absolute;
+  left: -10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #f7b700;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffffff;     
+}
+
+
+.pill-icon i {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+.pill-text {
+  white-space: nowrap;
+}
+
+
+.nav-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  border-color: #f7b700;
+}
+
+.nav-pill.active {
+  border-color: #f7b700;
+  font-weight: 600;
+}
+#noticias{
+    padding-left: 50px;
+    color: #FFB71B;
+    font-size: 40px;
+}
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    background-color: #ECECEC;
+    padding: 15px;
+    width: 70%;
+  }
+  
+  .filters input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    font-size: 14px;
+    margin-left: 10px;
+
+  }
+  .filters input[type="text"]:focus{
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.38) inset;
+        border: none;
+  }
+  
+  .filters button {
+    padding: 8px 15px;
+    background-color: #D80E2F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 5px 5px 15px -4px #000000;
+  }
+  
+  .filters button:hover {
+    background-color: #ffb71b;
+  }
+  
+  .news-list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+  }
+  
+  .news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Align image and content horizontally */
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .news-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+  
+  .news-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .news-item h2 a{
+    font-size: 20px;
+    margin: 0;
+    color: #003E65;
+  }
+  
+  .news-item p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #d4172e;
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 14px;
+    box-shadow: 5px 5px 15px -4px #000000;
+
+  }
+  
+  .pagination a:hover {
+    background-color: #ffb71b;
+  }
+
+  footer {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Primera barra */
+.footer-top {
+  background: #BA001E;
+  color: #ffffff;
+  padding: 0 0;
+  /* solo padding vertical */
+  box-sizing: border-box;
+ 
+}
+
+.footer-top .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 20px;
+   gap: 30px; 
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  /* ancho flexible mínimo 220px */
+  margin: 0 10px;
+  /* espacio entre columnas */
+}
+
+.footer-column h4 {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-column a:hover {
+  color: #ffb71b;
+}
+
+
+
+/* Segunda barra */
+.footer-middle {
+  background: #E01B1E;
+  color: #ffffff;
+  padding: 5px 30px;
+  /* puedes ajustar si quieres más espacio */
+  font-size: 13.5px;
+  line-height: 1.4;
+  display: flex;
+  justify-content: space-between;
+  /* distribuye el espacio equitativamente */
+  align-items: center;
+  /* centra verticalmente */
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.footer-info {
+  flex: 1 1 47%;
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 3px 0;
+}
+
+.footer-info a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer-links {
+  flex: 1 1 47%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 13.5px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #ffb71b;
+}
+
+/* Tercera barra */
+.footer-bottom {
+  background: #3366CC;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+  font-weight: 550;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.footer-bottom a {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+  color: #ffb71b;
+}
+
+.footer-bottom p {
+  color: #fff;
+  font-weight: 550;
+  margin: 0;
+}
+
+
+/* Header (mes y año) */
+.flatpickr-months {
+  padding: 5px 8px;
+}
+
+.flatpickr-current-month {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Días de la semana */
+.flatpickr-weekdays {
+  margin-top: 5px;
+}
+
+.flatpickr-weekday {
+  font-weight: 600;
+}
+
+/* Día seleccionado en amarillo */
+.calendar-card .flatpickr-day.selected,
+.calendar-card .flatpickr-day.startRange,
+.calendar-card .flatpickr-day.endRange,
+.calendar-card .flatpickr-day.selected:focus,
+.calendar-card .flatpickr-day.startRange:focus,
+.calendar-card .flatpickr-day.endRange:focus {
+  background: #ffb71b !important;
+  border-color: #ffb71b !important;
+  color: #000 !important;
+}
+
+/* Días de otros meses un poco más claros */
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  color: #c0c0c0;
+}
+/* Contenedor noticias + calendario */
+.news-calendar {
+  display: flex;
+  justify-content: space-between; /* noticias izquierda, calendario derecha */
+  align-items: center;            /* centra verticalmente el calendario */
+  gap: 40px;
+  padding: 0 50px 40px;
+  box-sizing: border-box;
+}
+
+/* Noticias ocupan la mayor parte */
+.news-list {
+  width: 65%;   /* ya tenías 60%, puedes ajustarlo */
+  margin: 0;
+}
+
+/* Tarjeta del calendario */
+.calendar-card {
+  padding: 20px;
+  max-width: 320px;
+  background: #fff;
+  box-sizing: border-box;
+
+}
+
+/* Quitamos sombra por defecto del flatpickr y bordeamos dentro */
+.calendar-card .flatpickr-calendar {
+  box-shadow: none;
+  border-radius: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* --- RESPONSIVE: en pantallas pequeñas se apilan --- */
+@media (max-width: 900px) {
+  .news-calendar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px 40px;
+  }
+
+  .news-list {
+    width: 100%;
+  }
+
+  .calendar-card {
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+
+
+  
