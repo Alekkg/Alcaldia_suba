@@ -1,76 +1,429 @@
-.navbar-brand img {
-    max-height: 50px;
+.blue-strip {
+    height: 40px;
+    background-color: #265bbf;
 }
 
-.header-logos {
-    background-color: #dd0c0c;
-    padding: 10px 0;
-}
-
-.banner-principal {
-    background: linear-gradient(135deg, #d40d0d, #bd0909);
-    color: white;
-    padding: 60px 0;
+/* Banner imagen bogotá */
+.banner-imagen {
+    width: 100%;
+    height: 450px;
+    background-image: url('/img/bogota.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
     margin-bottom: 30px;
 }
+    .navbar-brand img {
+        max-height: 50px;
+    }
 
-.servicio-card {
-    transition: transform 0.3s ease;
-    border: none;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
-}
+    .nav-pills-menu {
+        position: relative;
+        margin-top: -30px;
+        padding: 10px 0 20px;
+    }
 
-.servicio-card:hover {
-    transform: translateY(-5px);
-}
 
-.servicio-icon {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 15px;
-}
+    .nav-pill {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 24px 8px 48px;
+        background-color: #ffffff;
+        border-radius: 999px;
+        border: 1px solid #d0d0d0;
+        text-decoration: none;
+        color: #333333;
+        font-size: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
 
-.noticia-principal {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    overflow: hidden;
-}
+
+    .pill-icon {
+        position: absolute;
+        left: -10px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #f7b700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #ffffff;
+    }
+
+
+    .pill-icon i {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+
+    .pill-text {
+        white-space: nowrap;
+    }
+
+
+    .nav-pill:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+        border-color: #f7b700;
+    }
+
+    .nav-pill.active {
+        border-color: #f7b700;
+        font-weight: 600;
+    }
+
+    .header-logos {
+        background-color: #dd0c0c;
+        padding: 10px 0;
+    }
+
+    .banner-principal {
+        color: white;
+        padding: 60px 0;
+        margin-bottom: 30px;
+    }
+
+    .servicio-card {
+        transition: transform 0.3s ease;
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+    .servicio-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .servicio-icon {
+        font-size: 2.5rem;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    .noticia-principal {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
 .noticia-secundaria {
     border: 1px solid #dee2e6;
     border-radius: 8px;
     transition: all 0.3s ease;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .noticia-secundaria:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.fecha-noticia {
-    color: #6c757d;
-    font-size: 0.9rem;
+.noticia-secundaria img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.noticia-secundaria h5 {
+    flex-grow: 1;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .btn-custom {
-    background-color: #007bff;
+    background-color: #0d6efd;
     color: white;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
+    padding: 8px 16px;
     text-decoration: none;
+    border-radius: 4px;
     display: inline-block;
 }
 
 .btn-custom:hover {
-    background-color: #0056b3;
+    background-color: #0b5ed7;
     color: white;
 }
 
-.footer {
-    background-color: #343a40;
-    color: white;
-    padding: 30px 0;
-    margin-top: 50px;
+    .fecha-noticia {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+    footer {
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        background: #ffffff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    /* Primera barra */
+    .footer-top {
+        background: #BA001E;
+        color: #ffffff;
+        padding: 0 0;
+        /* solo padding vertical */
+        box-sizing: border-box;
+
+    }
+
+    .footer-top .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 10px auto;
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .footer-column {
+        flex: 1 1 220px;
+        /* ancho flexible mínimo 220px */
+        margin: 0 10px;
+        /* espacio entre columnas */
+    }
+
+    .footer-column h4 {
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-column a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-column a:hover {
+        color: #ffb71b;
+    }
+
+
+
+    /* Segunda barra */
+    .footer-middle {
+        background: #E01B1E;
+        color: #ffffff;
+        padding: 5px 30px;
+        /* puedes ajustar si quieres más espacio */
+        font-size: 13.5px;
+        line-height: 1.4;
+        display: flex;
+        justify-content: space-between;
+        /* distribuye el espacio equitativamente */
+        align-items: center;
+        /* centra verticalmente */
+    }
+
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .footer-info {
+        flex: 1 1 47%;
+        text-align: left;
+    }
+
+    .footer-info p {
+        margin: 3px 0;
+    }
+
+    .footer-info a {
+        color: #fff;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    .footer-links {
+        flex: 1 1 47%;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: underline;
+        font-size: 13.5px;
+        line-height: 1.4;
+        font-weight: 500;
+    }
+
+    .footer-links a:hover {
+        color: #ffb71b;
+    }
+
+    /* Tercera barra */
+    .footer-bottom {
+        background: #3366CC;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        color: #fff;
+        font-weight: 550;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom img {
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .footer-bottom a {
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 550;
+    }
+
+    .footer-bottom a:hover {
+        text-decoration: underline;
+        color: #ffb71b;
+    }
+
+    .footer-bottom p {
+        color: #fff;
+        font-weight: 550;
+        margin: 0;
+    }
+    /* Estilos específicos para la página de Atención al Usuario */
+
+/* Contenido principal */
+.main-content {
+    padding: 40px 0;
+}
+
+.atencion-titulo {
+    color: #1a3a8f;
+}
+
+.atencion-descripcion {
+    color: #555;
+}
+
+/* Tarjetas de información */
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 25px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: #1a3a8f;
+    border-bottom: 2px solid #1a3a8f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.contact-info strong {
+    color: #1a3a8f;
+}
+
+.contact-icon {
+    color: #1a3a8f;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* Mecanismos de contacto */
+.mechanism-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mechanism-item:last-child {
+    border-bottom: none;
+}
+
+.mechanism-item a {
+    color: #1a3a8f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mechanism-item a:hover {
+    color: #2a5bbf;
+    text-decoration: underline;
+}
+
+/* Responsive para la página de atención al usuario */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px 0;
+    }
+    
+    .info-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .contact-info {
+        margin-bottom: 10px;
+    }
+    
+    .mechanism-item {
+        padding: 8px 0;
+    }
+}
+h1{
+    color: #FFB71B
 }
